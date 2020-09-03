@@ -1,0 +1,35 @@
+{
+  "country": "NCL",
+  "data": [
+    [
+      "1",
+      "verybadplayer",
+      "28.311",
+      "102",
+      "3.6",
+      "20",
+      "2020-08-24 18:35:33",
+      "https://jstris.jezevec10.com/replay/20119590"
+    ],
+    [
+      "2",
+      "appearingGone",
+      "1:29.479",
+      "102",
+      "1.14",
+      "140",
+      "2020-06-07 03:21:42",
+      "https://jstris.jezevec10.com/replay/16519196"
+    ],
+    [
+      "3",
+      "Shining",
+      "1:42.280",
+      "101",
+      "0.99",
+      "162",
+      "2019-09-12 10:03:06",
+      "https://jstris.jezevec10.com/replay/6456392"
+    ]
+  ]
+}
