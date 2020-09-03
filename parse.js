@@ -34,6 +34,19 @@ Apify.main(async () => {
       return memo;
     }, {})
 
+    const fullAvgTimes = await dataSet.reduce((memo, item) => {
+      if (item.data.length) {
+        const times = item.data.map(data => hmsToSeconds(data[2]));
+
+        const avgTime =  times.reduce((a, b) => a + b / times.length, 0);
+
+        memo[item.country] = avgTime;
+      }
+
+      return memo;
+    }, {})
+
     await Apify.setValue('top_time_by_country', topTime);
     await Apify.setValue('top_avg_of_5_by_country', avgTimes);
+    await Apify.setValue('avg_by_country', fullAvgTimes);
 });
